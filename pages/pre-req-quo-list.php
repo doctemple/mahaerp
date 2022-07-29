@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">รายการขอราคาสินค้า</h1>
+                <h1 class="m-0"><i class="fas fa-list"></i> รายการขอราคาสินค้า</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -19,8 +19,6 @@
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">
-                <a class="btn btn-primary" href="?rq"><i class="fa fa-plus"></i>
-                    ขอใบเสนอราคา(จำหน่าย)</a>
                 <div class="btn btn-secondary" data-toggle="modal" data-target="#modal-xl"><i class="fa fa-plus"></i>
                     ขอใบเสนอราคา(คลังสินค้า)</div>
             </h3>
@@ -31,13 +29,13 @@
                 <thead>
                     <tr>
                         <th style="width: 10px">#</th>
-                        <th>ชื่อลูกค้า</th>
+                        <th>รายการ</th>
                         <th>รหัสใบขอราคา</th>
                         <th>รายละเอียด</th>
                         <th>วันที่สร้าง</th>
                         <th>เจ้าหน้าที่</th>
                         <th style="width: 40px">สถานะ</th>
-                        <th></th>
+                        <th>ซัพพลายเออร์</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,7 +45,7 @@
                         <td>Customer A</td>
                         <td>RQ0014</td>
                         <td>
-                            <a class="btn btn-light" href="?rql&rq0014">ข้อมูล</a>
+                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
@@ -56,13 +54,14 @@
                             <div class="btn btn-secondary"><i class="fa fa-user"></i> มงคล ฟิล์ม จำกัด</div>
                             <div class="btn btn-secondary"><i class="fa fa-user"></i> AM Control</div>
                         </td>
+
                     </tr>
                     <tr>
                         <td>2.</td>
                         <td>Customer B</td>
                         <td>RQ0015</td>
                         <td>
-                            <div class="btn btn-light">ข้อมูล</div>
+                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
@@ -73,16 +72,16 @@
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>Customer C</td>
+                        <td>มาหา เทคโนโลยี</td>
                         <td>RQ0016</td>
                         <td>
-                            <div class="btn btn-light">ข้อมูล</div>
+                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ปอย</td>
-                        <td><span class="badge bg-success">เสร็จ</span></td>
+                        <td><span class="badge bg-secondary">รอ</span></td>
                         <td>
-                            รอ
+                            <a class="btn btn-success" href="?quo"><i class="fa fa-plus"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -90,7 +89,7 @@
                         <td>Customer D</td>
                         <td>RQ0017</td>
                         <td>
-                            <div class="btn btn-light">ข้อมูล</div>
+                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>หน่อย</td>
@@ -104,7 +103,7 @@
                         <td>Customer E</td>
                         <td>RQ0018</td>
                         <td>
-                            <div class="btn btn-light">ข้อมูล</div>
+                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
@@ -118,14 +117,14 @@
                         <td>Customer F</td>
                         <td>RQ0019</td>
                         <td>
-                            <div class="btn btn-light">ข้อมูล</div>
+                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
                         <td><span class="badge bg-secondary">รอ</span></td>
                         <td>
-                            <div class="btn btn-secondary"><i class="fa fa-user"></i> มงคล ฟิล์ม จำกัด</div>
-                            <div class="btn btn-secondary"><i class="fa fa-user"></i> AM Control</div>
+                            <div class="btn btn-success"><i class="fa fa-user"></i> มงคล ฟิล์ม จำกัด</div>
+                            <div class="btn btn-success"><i class="fa fa-user"></i> AM Control</div>
                         </td>
                     </tr>
                     <tr>
@@ -133,14 +132,15 @@
                         <td>Customer G</td>
                         <td>RQ0010</td>
                         <td>
-                            <div class="btn btn-light">ข้อมูล</div>
+                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
                         <td><span class="badge bg-secondary">รอ</span></td>
                         <td>
-                            รอ
+                        <a class="btn btn-success" href="?quo"><i class="fa fa-plus"></i></a>
                         </td>
+
                     </tr>
                 </tbody>
             </table>

@@ -13,7 +13,7 @@ function wizard($wizard,$title=""){
 <div class="card">
 <div class="card-header">
                 <a class="card-link" data-toggle="collapse" href="#collapseOneWizard">
-                ผังค์กระบวนการ <?php echo $title; ?>
+                <i class="fas fa-angle-double-right"></i> ผังค์กระบวนการ <?php echo $title; ?>
                 </a>
             </div>
             <div id="collapseOneWizard" class="collapse" data-parent="#wizard">

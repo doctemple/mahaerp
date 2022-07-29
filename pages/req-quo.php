@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">ลูกค้าขอให้เสนอราคา</h1>
+                <h1 class="m-0"><i class="fas fa-file-import"></i> ลูกค้าขอให้เสนอราคา</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -28,7 +28,7 @@ $wizard = array(
 wizard($wizard);
 ?>
 
-    <div class="card card-primary">
+    <div class="card">
         <div class="card-header">
             <h3 class="card-title">Require Quotation</h3>
         </div>

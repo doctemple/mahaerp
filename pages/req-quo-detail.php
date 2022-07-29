@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">ขอราคาสินค้า</h1>
+                <h1 class="m-0"><i class="fas fa-file-alt"></i> ขอราคาสินค้า</h1>
                 <h5>อ้างอิง : ใบขอเสนอราคาลูกค้า [RQ00014]</h5>
             </div><!-- /.col -->
             <div class="col-sm-6">
@@ -100,8 +100,6 @@ wizard($wizard,"ขอใบเสนอราคา");
             <h3 class="card-title">
                 <div class="btn btn-primary" data-toggle="modal" data-target="#modal-xl"><i class="fa fa-plus"></i>
                     เพิ่มสินค้า</div>
-                    <a class="btn btn-secondary" href="?rqs"><i class="fa fa-users"></i>
-                    ขอราคาซัพพลายเออร์</a>
             </h3>
         </div>
         <!-- /.card-header -->
@@ -218,6 +216,9 @@ wizard($wizard,"ขอใบเสนอราคา");
             </table>
         </div>
         <!-- /.card-body -->
+        <div class="card-footer">
+        <a class="btn btn-success" href="?rql"><i class="fa fa-send"></i> ยืนยันขอราคา</a>
+        </div>
     </div>
 
     <div class="alert alert-warning alert-dismissible">

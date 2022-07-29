@@ -43,7 +43,7 @@ $pages['acc'] = array("bb","bil","col","deb","fol");
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="?rq" class="nav-link <?php if($rou=="rq"){ echo "active"; } ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-file-import nav-icon"></i>
                   <p>ลูกค้าขอให้เสนอราคา</p>
                 </a>
               </li>
@@ -61,13 +61,13 @@ $pages['acc'] = array("bb","bil","col","deb","fol");
               </li>
               <li class="nav-item">
                 <a href="?quo" class="nav-link <?php if($rou=="quo"){ echo "active"; } ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-file-invoice-dollar nav-icon"></i>
                   <p>ใบเสนอราคา</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="?od" class="nav-link <?php if($rou=="od"){ echo "active"; } ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-file-invoice nav-icon"></i>
                   <p>เปิดบิลขาย</p>
                 </a>
               </li>
@@ -102,7 +102,7 @@ $pages['acc'] = array("bb","bil","col","deb","fol");
               </li>
               <li class="nav-item">
                 <a href="?po" class="nav-link <?php if($rou=="po"){ echo "active"; } ?>">
-                  <i class="far fa-circle nav-icon"></i>
+                <i class="fas fa-file-invoice-dollar nav-icon"></i>
                   <p>สร้างใบสั่งซื้อ</p>
                 </a>
               </li>

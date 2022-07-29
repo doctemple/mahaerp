@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0"> ขอราคาซัพพลายเออร์</h1>
+                <h1 class="m-0"><i class="fas fa-file-invoice-dollar"></i> ขอราคาซัพพลายเออร์</h1>
                 <h5>อ้างอิง : ใบขอเสนอราคาลูกค้า [RQ00014]</h5>
             </div><!-- /.col -->
             <div class="col-sm-6">
@@ -54,6 +54,7 @@ wizard($wizard);
                         <th>จำนวน</th>
                         <th>หน่วยนับ</th>
                         <th>ราคา</th>
+                        <th>รวม</th>                        
                         <th></th>
                     </tr>
                 </thead>
@@ -70,6 +71,7 @@ wizard($wizard);
                         <td>11</td>
                         <td>ตัว</td>
                         <td>รอ</td>
+                        <td></td>
                         <td>
                             <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
@@ -86,6 +88,7 @@ wizard($wizard);
                         <td>11</td>
                         <td>ตัว</td>
                         <td>รอ</td>
+                        <td></td>
                         <td>
                         <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
@@ -101,7 +104,8 @@ wizard($wizard);
                         <td>3 x 2 cm</td>
                         <td>11</td>
                         <td>ตัว</td>
-                        <td>1,345</td>
+                        <td>1,345 <span class="badge badge-success">5 วัน</span></td>
+                        <td>14,795</td>
                         <td>
                         <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
@@ -117,7 +121,8 @@ wizard($wizard);
                         <td>3 x 2 cm</td>
                         <td>11</td>
                         <td>ตัว</td>
-                        <td>1,345</td>
+                        <td>1,345 <span class="badge badge-warning">เกิน 17 วัน</span></td>
+                        <td>14,795</td>
                         <td>
                         <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
@@ -133,7 +138,8 @@ wizard($wizard);
                         <td>3 x 2 cm</td>
                         <td>11</td>
                         <td>ตัว</td>
-                        <td>1,345</td>
+                        <td>1,345 <span class="badge badge-success">1 วัน</span></td>
+                        <td>14,795</td>
                         <td>
                         <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
@@ -149,7 +155,8 @@ wizard($wizard);
                         <td>3 x 2 cm</td>
                         <td>11</td>
                         <td>ตัว</td>
-                        <td>1,345</td>
+                        <td>1,345 <span class="badge badge-success">2 วัน</span></td>
+                        <td>14,795</td>
                         <td>
                         <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
@@ -160,7 +167,7 @@ wizard($wizard);
         </div>
         <!-- /.card-body -->
         <div class="card-footer text-right">
-        <a class="btn btn-danger" href="rqs-print.php"><i class="fa fa-print"></i>พิมพ์</a>
+        <a class="btn btn-danger" href="rqs-print.php"><i class="fa fa-print"></i> พิมพ์</a>
 </div>
     </div>
 </div>

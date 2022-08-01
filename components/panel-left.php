@@ -200,9 +200,21 @@ $pages['acc'] = array("bb","bil","col","deb","fol");
             </a>
           </li>
 
+          <li class="nav-item" style="margin-top:60px;">
+            <a href="class/signout.php" class="nav-link">
+            <span class="btn btn-danger btn-circle btn-circle-sm">
+              <i class="nav-icon fa fa-sign-out-alt text-light"></i> 
+            </span><p>&nbsp;&nbsp;ออกจากระบบ</p>
+            </a>
+          </li>
+
         </ul>
+
       </nav>
       <!-- /.sidebar-menu -->
+
+
     </div>
+
     <!-- /.sidebar -->
   </aside>

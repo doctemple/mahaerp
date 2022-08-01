@@ -41,6 +41,7 @@ include("core/start.php");
         case 'col': include("pages/collection.php"); break;
         case 'deb': include("pages/debtor.php"); break;
         case 'fol': include("pages/follow.php"); break;
+        case 'so': include("pages/signout.php"); break;
         default : 
         if(isset($_SESSION['aut']) && $_SESSION['aut']==true){
             include("pages/dashboard.php"); 

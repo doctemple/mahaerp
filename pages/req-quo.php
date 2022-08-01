@@ -17,23 +17,21 @@
 
 <div class="container-fluid">
 
-<?php 
-include_once("plugins/wizard/wizard.php");
-$wizard = array(
-  array("ลูกค้าขอใบเสนอราคา",true),
-  array("รายการสถานะการขอราคา",false),
-  array("สร้างใบขอราคา",false),
-  array("ขอราคาซัพพลายเออร์",false)
-);
-wizard($wizard);
-?>
+    <?php 
+        include_once("plugins/wizard/wizard.php");
+        $wizard = array(
+        array("ลูกค้าขอใบเสนอราคา",true),
+        array("รายการสถานะการขอราคา",false),
+        array("สร้างใบขอราคา",false),
+        array("ขอราคาซัพพลายเออร์",false)
+        );
+        wizard($wizard);
+        ?>
 
     <div class="card">
         <div class="card-header">
             <h3 class="card-title">Require Quotation</h3>
         </div>
-        <!-- /.card-header -->
-        <!-- form start -->
         <form>
             <div class="card-body">
                 <div class="form-group">
@@ -77,11 +75,10 @@ wizard($wizard);
                     </div>
                 </div>
             </div>
-            <!-- /.card-body -->
-
             <div class="card-footer">
                 <a href="?rql" class="btn btn-primary">บันทึก</a>
             </div>
         </form>
     </div>
+</div>
 </div>

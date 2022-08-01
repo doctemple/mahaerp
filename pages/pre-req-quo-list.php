@@ -12,7 +12,7 @@
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
+    </div>
 </div>
 
 <div class="container-fluid">
@@ -138,7 +138,7 @@
                         <td>ส้ม</td>
                         <td><span class="badge bg-secondary">รอ</span></td>
                         <td>
-                        <a class="btn btn-success" href="?quo"><i class="fa fa-plus"></i></a>
+                            <a class="btn btn-success" href="?quo"><i class="fa fa-plus"></i></a>
                         </td>
 
                     </tr>
@@ -201,4 +201,4 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal -->
+</div>

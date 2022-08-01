@@ -1,0 +1,16 @@
+git config --global user.name "doctemple"
+git config --global user.email "siriwat.chanakhun@gmail.com"
+git config --global user.password "Phuvieng987"
+git config --global --list
+
+git clean -f
+
+git init
+git config --global user.name=Saivay
+git config --global user.email=siriwat.chanakhun@gmail.com
+git config --global user.password=Phuvieng@123
+git remote add origin git@mahatech.trueddns.com:27139:Saivay/mahaerp.git
+git commit -m "commit 2"
+git push origin master
+
+

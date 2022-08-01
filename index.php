@@ -1,5 +1,6 @@
 <?php 
-if(str_contains($_SERVER['QUERY_STRING'],'&')){
+
+if (strpos($_SERVER['QUERY_STRING'], '&') !== false) {
     $qs = explode('&',$_SERVER['QUERY_STRING']);
     $rou = $qs[0];
     $det = true;

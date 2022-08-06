@@ -1,7 +1,9 @@
 <?php
+if(isset($_SESSION['aut'])){ 
 include("components/page-end.php");
 include("components/panel-right.php");
 include("components/panel-bottom.php");
+}
 ?>
 </div>
 <?php

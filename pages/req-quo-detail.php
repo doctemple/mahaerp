@@ -1,26 +1,6 @@
-<div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1 class="m-0"><i class="fas fa-file-alt"></i> ขอราคาสินค้า</h1>
-                <h5>อ้างอิง : ใบขอเสนอราคาลูกค้า [RQ00014]</h5>
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="?"><i class="nav-icon fas fa-home"></i> </a></li>
-                    <li class="breadcrumb-item active">ฝ่ายขาย</li>
-                    <li class="breadcrumb-item active">ขอราคาสินค้า</li>
-                </ol>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-</div>
-
-
 <div class="container-fluid">
 
 <?php 
-include_once("plugins/wizard/wizard.php");
 $wizard = array(
   array("ลูกค้าขอใบเสนอราคา",true),
   array("รายการสถานะการขอราคา",true),
@@ -28,12 +8,15 @@ $wizard = array(
   array("ขอราคาซัพพลายเออร์",false)
 );
 wizard($wizard,"ขอใบเสนอราคา");
+
+$reqid = $_PARAM[1];
 ?>
 
     <div class="card">
-        <div class="card-body row">
-
-            <br>
+ 
+        <div class="card-body">
+        <h5>อ้างอิง : ใบขอเสนอราคาลูกค้า [<?php print($reqid); ?>]</h5>       
+            <div class="row">
 
             <div class="col-sm align-self-start">
                 <div class="text-muted">
@@ -77,7 +60,7 @@ wizard($wizard,"ขอใบเสนอราคา");
             </div>
         </div>
     </div>
-
+    </div>
 
     <div id="accordion">
         <div class="card">

@@ -8,7 +8,7 @@ $text = '<div class="content-header">
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#"><i class="nav-icon fas fa-home"></i> </a></li>';
+                    <li class="breadcrumb-item"><a href="?"><i class="nav-icon fas fa-home"></i> </a></li>';
 
 				if($p1!=""){
 				$text .= '<li class="breadcrumb-item active">'.$p1.'</li>';

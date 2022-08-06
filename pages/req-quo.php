@@ -1,5 +1,4 @@
 
-<?php echo breadcrumb("ลูกค้าขอให้เสนอราคา","ฝ่ายขาย","ลูกค้าขอให้เสนอราคา"); ?>
 <div class="container-fluid">
 
     <?php 

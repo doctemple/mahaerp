@@ -18,8 +18,10 @@ include('components/com.php');
 </head>
 <body class="hold-transition sidebar-mini" >
 <div class="wrapper">
-<?php  
+<?php
+if(isset($_SESSION['aut'])){ 
 include("components/topbar.php");
 include("components/panel-left.php");
 include("components/page-open.php"); 
+}
 ?>

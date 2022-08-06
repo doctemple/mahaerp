@@ -1,24 +1,8 @@
-<div class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1 class="m-0"><i class="fas fa-file-import"></i> ลูกค้าขอให้เสนอราคา</h1>
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="?"><i class="nav-icon fas fa-home"></i> </a></li>
-                    <li class="breadcrumb-item active">ฝ่ายขาย</li>
-                    <li class="breadcrumb-item active">ลูกค้าขอให้เสนอราคา</li>
-                </ol>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-</div>
 
+<?php echo breadcrumb("ลูกค้าขอให้เสนอราคา","ฝ่ายขาย","ลูกค้าขอให้เสนอราคา"); ?>
 <div class="container-fluid">
 
     <?php 
-        include_once("plugins/wizard/wizard.php");
         $wizard = array(
         array("ลูกค้าขอใบเสนอราคา",true),
         array("รายการสถานะการขอราคา",false),
@@ -76,7 +60,7 @@
                 </div>
             </div>
             <div class="card-footer">
-                <a href="?rql" class="btn btn-primary">บันทึก</a>
+                <a href="?rql&rq0014" class="btn btn-primary">บันทึก</a>
             </div>
         </form>
     </div>

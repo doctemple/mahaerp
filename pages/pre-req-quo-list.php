@@ -51,6 +51,7 @@
                         <td>ส้ม</td>
                         <td><span class="badge bg-danger">ล่าช้า</span></td>
                         <td>
+                            <a href="?rqs" class="btn btn-secondary"><i class="fa fa-cog"></i></a>
                             <div class="btn btn-secondary"><i class="fa fa-user"></i> มงคล ฟิล์ม จำกัด</div>
                             <div class="btn btn-secondary"><i class="fa fa-user"></i> AM Control</div>
                         </td>
@@ -67,6 +68,7 @@
                         <td>ส้ม</td>
                         <td><span class="badge bg-success">เสร็จ</span></td>
                         <td>
+                            <a href="?rqs" class="btn btn-secondary"><i class="fa fa-cog"></i></a>
                             <div class="btn btn-secondary"><i class="fa fa-user"></i> มงคล ฟิล์ม จำกัด</div>
                         </td>
                     </tr>
@@ -81,7 +83,7 @@
                         <td>ปอย</td>
                         <td><span class="badge bg-secondary">รอ</span></td>
                         <td>
-                            <a class="btn btn-success" href="?quo"><i class="fa fa-plus"></i></a>
+                            <a href="?rqs" class="btn btn-secondary"><i class="fa fa-cog"></i></a>
                         </td>
                     </tr>
                     <tr>
@@ -95,6 +97,7 @@
                         <td>หน่อย</td>
                         <td><span class="badge bg-danger">ล่าช้า</span></td>
                         <td>
+                            <a href="?rqs" class="btn btn-secondary"><i class="fa fa-cog"></i></a>
                             <div class="btn btn-secondary"><i class="fa fa-user"></i> AM Control</div>
                         </td>
                     </tr>
@@ -109,6 +112,7 @@
                         <td>ส้ม</td>
                         <td><span class="badge bg-secondary">รอ</span></td>
                         <td>
+                            <a href="?rqs" class="btn btn-secondary"><i class="fa fa-cog"></i></a>
                             <div class="btn btn-secondary"><i class="fa fa-user"></i> AM Control</div>
                         </td>
                     </tr>
@@ -123,8 +127,10 @@
                         <td>ส้ม</td>
                         <td><span class="badge bg-secondary">รอ</span></td>
                         <td>
-                            <div class="btn btn-success"><i class="fa fa-user"></i> มงคล ฟิล์ม จำกัด</div>
-                            <div class="btn btn-success"><i class="fa fa-user"></i> AM Control</div>
+                            <a href="?rqs" class="btn btn-secondary"><i class="fa fa-cog"></i></a>
+                            <div class="btn btn-success"><i class="fas fa-file-invoice-dollar"></i> มงคล ฟิล์ม จำกัด</div>
+                            <div class="btn btn-success"><i class="fas fa-file-invoice-dollar"></i> AM Control</div>
+                            <div class="btn btn-success"><i class="fas fa-file-invoice-dollar"></i> PLM Tech</div>
                         </td>
                     </tr>
                     <tr>
@@ -138,14 +144,16 @@
                         <td>ส้ม</td>
                         <td><span class="badge bg-secondary">รอ</span></td>
                         <td>
-                            <a class="btn btn-success" href="?quo"><i class="fa fa-plus"></i></a>
+                            <a href="?rqs" class="btn btn-secondary"><i class="fa fa-cog"></i></a>
                         </td>
 
                     </tr>
                 </tbody>
             </table>
         </div>
-        <!-- /.card-body -->
+        <div class="card-footer ">
+            &nbsp;
+        </div>
     </div>
 </div>
 

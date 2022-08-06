@@ -11,9 +11,9 @@
       <center><img src="dist/img/logo.jpg" width="50%"></center>
       <p class="login-box-msg">ลงทะเบียน เข้าระบบ</p>
 
-      <form action="class/aut.php" method="post">
+      <form action="" method="post">
         <div class="input-group mb-3">
-          <input type="text" name="u" class="form-control" placeholder="User">
+          <input type="text" name="u" id="username" class="form-control" placeholder="User">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" name="p" class="form-control" placeholder="Password">
+          <input type="password" name="p" id="password" class="form-control" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -39,7 +39,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <input type="submit" class="btn btn-primary btn-block" value="ล็อกอิน">
+            <input type="button" class="btn btn-primary btn-block" id="btlogin" value="ล็อกอิน">
           </div>
           <!-- /.col -->
         </div>

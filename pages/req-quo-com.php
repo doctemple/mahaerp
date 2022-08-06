@@ -35,7 +35,6 @@
                             <tr>
                                 <th style="width: 10px">#</th>
                                 <th>สินค้า</th>
-                                <th>รายละเอียดสินค้า</th>
                                 <th>จำนวน</th>
                                 <th>หน่วยนับ</th>
                             </tr>
@@ -44,48 +43,52 @@
 
                             <tr>
                                 <td>1.</td>
-                                <td>Product A</td>
-                                <td><a class="btn btn-sm btn-secondary" href="#">ข้อมูลสินค้า</a></td>
+                                <td><a class="badge badge-light" href="#">Product A</a></td>
                                 <td>11</td>
                                 <td>ตัว</td>
                             </tr>
                             <tr>
                                 <td>2.</td>
-                                <td>Product A</td>
-                                <td><a class="btn btn-sm btn-secondary" href="#">ข้อมูลสินค้า</a></td>
+                                <td><a class="badge badge-light" href="#">Product B</a></td>
                                 <td>11</td>
                                 <td>ตัว</td>
                             </tr>
                             <tr>
                                 <td>3.</td>
-                                <td>Product A</td>
-                                <td><a class="btn btn-sm btn-secondary" href="#">ข้อมูลสินค้า</a></td>
+                                <td><a class="badge badge-light" href="#">Product C</a></td>
                                 <td>11</td>
                                 <td>ตัว</td>
                             </tr>
                             <tr>
                                 <td>4.</td>
-                                <td>Product A</td>
-                                <td><a class="btn btn-sm btn-secondary" href="#">ข้อมูลสินค้า</a></td>
+                                <td><a class="badge badge-light" href="#">Product D</a></td>
                                 <td>11</td>
                                 <td>ตัว</td>
                             </tr>
                             <tr>
                                 <td>5.</td>
-                                <td>Product A</td>
-                                <td><a class="btn btn-sm btn-secondary" href="#">ข้อมูลสินค้า</a></td>
+                                <td><a class="badge badge-light" href="#">Product E</a></td>
+                                <td>11</td>
+                                <td>ตัว</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td><a class="badge badge-light" href="#">Product E</a></td>
                                 <td>11</td>
                                 <td>ตัว</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <div class="card-footer">
+                    <div class="btn btn-warning">เลือกซัพพลายเออร์</div>
+                </div>
             </div>
         </div>
         <div class="col">
 
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-primary">
                     <h3 class="card-title">
                         ซัพพลายเออร์ 1
                     </h3>
@@ -138,7 +141,7 @@
         <div class="col">
 
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-warning">
                     <h3 class="card-title">
                         ซัพพลายเออร์ 2
                     </h3>
@@ -183,14 +186,14 @@
                     </table>
                 </div>
                 <div class="card-footer">
-                    <div class="btn btn-primary">เลือกซัพพลายเออร์</div>
+                    <div class="btn btn-warning">เลือกซัพพลายเออร์</div>
                 </div>
             </div>
         </div>
         <div class="col">
 
             <div class="card">
-                <div class="card-header">
+                <div class="card-header bg-danger">
                     <h3 class="card-title">
                         ซัพพลายเออร์ 3
                     </h3>
@@ -235,7 +238,7 @@
                     </table>
                 </div>
                 <div class="card-footer">
-                    <div class="btn btn-primary">เลือกซัพพลายเออร์</div>
+                    <div class="btn btn-danger">เลือกซัพพลายเออร์</div>
                 </div>
             </div>
         </div>

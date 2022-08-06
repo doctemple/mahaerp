@@ -2,6 +2,8 @@
 session_start(); 
 include_once('core/config.php');
 include_once('controllers/conn.php');
+include_once('controllers/menu.php');
+include_once('controllers/script.php');
 include('components/com.php');
 ?>
 <!DOCTYPE html>

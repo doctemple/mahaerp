@@ -1,3 +1,7 @@
+<?php
+$_CONFIG['script']['chart'] = true;
+$_CONFIG['script']['dashboard3'] = true;
+?>
 <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">

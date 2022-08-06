@@ -27,8 +27,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item <?php if(in_array($_ROUTE,_PAGES['sale'])){ echo "menu-open"; } ?>">
-            <a href="#" class="nav-link <?php if(in_array($_ROUTE,_PAGES['sale'])){ echo "active"; } ?>">
+          <li class="nav-item <?php if(_MENU[$_ROUTE][3]==="sale"){ echo "menu-open"; } ?>">
+            <a href="#" class="nav-link <?php if(_MENU[$_ROUTE][3]==='sale'){ echo "active"; } ?>">
               <i class="nav-icon fas fa-comments-dollar"></i>
               <p>
                 ฝ่ายขาย
@@ -68,8 +68,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item  <?php if(in_array($_ROUTE,_PAGES['pur'])){ echo "menu-open"; } ?>">
-            <a href="#" class="nav-link <?php if(in_array($_ROUTE,_PAGES['pur'])){ echo "active"; } ?>">
+          <li class="nav-item  <?php if(_MENU[$_ROUTE][3]==="pur"){ echo "menu-open"; } ?>">
+            <a href="#" class="nav-link <?php if(_MENU[$_ROUTE][3]==="pur"){ echo "active"; } ?>">
               <i class="nav-icon fas fa-file-invoice-dollar"></i>
               <p>
                 จัดซื้อ 
@@ -109,8 +109,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item  <?php if(in_array($_ROUTE,_PAGES['wh'])){ echo "menu-open"; } ?>">
-            <a href="#" class="nav-link <?php if(in_array($_ROUTE,_PAGES['wh'])){ echo "active"; } ?>">
+          <li class="nav-item  <?php if(_MENU[$_ROUTE][3]==="wh"){ echo "menu-open"; } ?>">
+            <a href="#" class="nav-link <?php if(_MENU[$_ROUTE][3]==="wh"){ echo "active"; } ?>">
               <i class="nav-icon fas fa-warehouse"></i>
               <p>
                 คลังสินค้า
@@ -151,8 +151,8 @@
             </ul>
           </li>
 
-          <li class="nav-item  <?php if(in_array($_ROUTE,_PAGES['acc'])){ echo "menu-open"; } ?>">
-            <a href="#" class="nav-link <?php if(in_array($_ROUTE,_PAGES['acc'])){ echo "active"; } ?>">
+          <li class="nav-item  <?php if(_MENU[$_ROUTE][3]==="acc"){ echo "menu-open"; } ?>">
+            <a href="#" class="nav-link <?php if(_MENU[$_ROUTE][3]==="acc"){ echo "active"; } ?>">
               <i class="nav-icon fas fa-file-contract"></i>
               <p>
                 บัญชี
@@ -188,8 +188,8 @@
             </ul>
           </li>
           
-          <li class="nav-item  <?php if(in_array($_ROUTE,_PAGES['rep'])){ echo "menu-open"; } ?>">
-            <a href="#" class="nav-link <?php if(in_array($_ROUTE,_PAGES['rep'])){ echo "active"; } ?>">
+          <li class="nav-item  <?php if(_MENU[$_ROUTE][3]==="rep"){ echo "menu-open"; } ?>">
+            <a href="#" class="nav-link <?php if(_MENU[$_ROUTE][3]==="rep"){ echo "active"; } ?>">
               <i class="nav-icon fas fa-chart-bar"></i>
               <p>
                 รายงาน
@@ -236,8 +236,8 @@
             </ul>
           </li>
 
-          <li class="nav-item  <?php if(in_array($_ROUTE,_PAGES['set'])){ echo "menu-open"; } ?>">
-            <a href="#" class="nav-link <?php if(in_array($_ROUTE,_PAGES['set'])){ echo "active"; } ?>">
+          <li class="nav-item  <?php if(_MENU[$_ROUTE][3]==="set"){ echo "menu-open"; } ?>">
+            <a href="#" class="nav-link <?php if(_MENU[$_ROUTE][3]==="set"){ echo "active"; } ?>">
               <i class="fas nav-icon fa-users-cog"></i>
               <p>
                 การตั้งค่า

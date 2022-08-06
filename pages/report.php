@@ -1,3 +1,8 @@
+<?php
+$_CONFIG['script']['chart'] = true;
+$_CONFIG['script']['report'] = true; 
+?>
+
     <div id="container1" class="content" >
       <div id="container2" class="container-fluid" >
         <div class="row">

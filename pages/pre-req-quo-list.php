@@ -28,7 +28,7 @@
                         <td>Customer A</td>
                         <td>RQ0014</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
+                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
@@ -45,7 +45,7 @@
                         <td>Customer B</td>
                         <td>RQ0015</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
+                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
@@ -60,7 +60,7 @@
                         <td>มาหา เทคโนโลยี</td>
                         <td>RQ0016</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
+                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ปอย</td>
@@ -74,7 +74,7 @@
                         <td>Customer D</td>
                         <td>RQ0017</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
+                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>หน่อย</td>
@@ -89,7 +89,7 @@
                         <td>Customer E</td>
                         <td>RQ0018</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
+                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
@@ -104,7 +104,7 @@
                         <td>Customer F</td>
                         <td>RQ0019</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
+                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>
@@ -121,7 +121,7 @@
                         <td>Customer G</td>
                         <td>RQ0010</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rql&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
+                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i> ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
                         <td>ส้ม</td>

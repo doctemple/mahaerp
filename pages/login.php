@@ -1,3 +1,6 @@
+<?php
+$_CONFIG['script']['login'] = true; 
+?>
 <div class="row justify-content-center ">
 
 <div class="login-box align-items-center">

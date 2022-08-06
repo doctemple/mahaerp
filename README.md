@@ -1,5 +1,5 @@
 
-# Maha Technology ERP
+# Enterprise Resource Planning (ERP)
 
 One Paragraph of the project description
 
@@ -15,12 +15,20 @@ Requirements for the software and other tools to build, test and push
 - [PHP](https://www.php.net/downloads)
 - [Apache](https://httpd.apache.org/download.cgi)
 - [PostgreSQL](https://www.postgresql.org/download/)
+- [GIT](https://git-scm.com/download/win)
 
 ### Installing
 
+    git config --global user.name "username"
+    git config --global user.email "Email"
+    git config --global user.password "Password"
+    git config --global --list
+
     git clone https://github.com/doctemple/mahaerp.git
 
-    Rename core/sample-config.php
+    rename "core/sample-config.php" "core/config.php"
+
+    notepad core/config.php
 
     <?php
         DEFINE('_SYS',array(
@@ -37,16 +45,17 @@ Requirements for the software and other tools to build, test and push
 
       Try PostgreSQL Password to password
       Try PostgreSQL Database Name to dbname
+      Saved.
 
-## Running the tests
+## Push Source Code
 
-Explain how to run the automated tests for this system
+    git add .
+    git commit -m "commit 2"
+    git push -u origin
 
-### Sample Tests
+### Clean Git 
 
-Explain what these tests test and why
-
-    Give an example
+    git clean -f
 
 ### Style test
 

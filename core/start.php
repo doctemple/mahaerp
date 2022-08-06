@@ -1,4 +1,5 @@
 <?php 
+session_start(); 
 include_once('core/config.php');
 include_once('controllers/conn.php');
 include('components/com.php');

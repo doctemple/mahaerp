@@ -19,10 +19,24 @@ Requirements for the software and other tools to build, test and push
 ### Installing
 
     git clone https://github.com/doctemple/mahaerp.git
-    Edit core/config.php
 
-End with an example of getting some data out of the system or using it
-for a little demo
+    Rename core/sample-config.php
+
+    <?php
+        DEFINE('_SYS',array(
+            'system' => 'System Name',
+            'mode' => 'dev',
+            'db' => 'PostgreSQL',
+            'host' => 'localhost',
+            'port' => '5432',
+            'username' => 'postgres',
+            'password' => '?',
+            'dbname' => '?'
+        ));
+      ?>
+
+      Try PostgreSQL Password to password
+      Try PostgreSQL Database Name to dbname
 
 ## Running the tests
 

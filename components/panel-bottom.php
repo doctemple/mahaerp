@@ -3,7 +3,7 @@
     <div class="user-panel float-right pb-1 d-flex">
       <img src="dist/img/logo.jpg" alt="User Avatar" class="img-size-50 img-circle">
       <div class="info">
-        <a href="#" class="d-block text-secondary">ERP Version 0.1 Beta</a>
+        <a href="#" class="d-block text-secondary"><?php echo _SYS['system'].' '._SYS['version']; ?></a>
       </div>
     </div>
           <div class="user-panel  pb-1 d-flex">

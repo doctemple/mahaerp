@@ -1,8 +1,8 @@
 <?php
 if(isset($_SESSION['aut'])){ 
-include("components/page-end.php");
-include("components/panel-right.php");
-include("components/panel-bottom.php");
+include(_PATH.'/components/page-end.php');
+include(_PATH.'/components/panel-right.php');
+include(_PATH.'/components/panel-bottom.php');
 }
 ?>
 </div>
@@ -12,6 +12,6 @@ foreach($_CONFIG['tags'] as $key => $val){
         echo $val."\n";
     }
 }
+
+ECHO HTML5_CLOSE();
 ?>
-</body>
-</html>

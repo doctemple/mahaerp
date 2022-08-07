@@ -10,6 +10,9 @@ $_CONFIG['script']['login'] = true;
   </div>
   <!-- /.login-logo -->
   <div class="card">
+    <?php
+    CheckVersion(); 
+    ?>
     <div class="card-body login-card-body">
       <center><img src="dist/img/logo.jpg" width="50%"></center>
       <p class="login-box-msg">ลงทะเบียน เข้าระบบ</p>
@@ -53,6 +56,9 @@ $_CONFIG['script']['login'] = true;
         <a href="forgot-password.html">ลืมรหัสผ่าน</a>
       </p>
 
+      <p class="mb-1">
+        ปรับปรุงระบบล่าสุด <?php ECHO _LAST; ?>
+      </p>
     </div>
     <!-- /.login-card-body -->
   </div>

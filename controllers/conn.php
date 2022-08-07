@@ -1,8 +1,12 @@
 <?php 
-$conn = pg_connect('host='._SYS['host'].' port='._SYS['port'].' dbname='._SYS['dbname'].' user='._SYS['username'].' password='._SYS['password']);
+$_EXT = get_loaded_extensions();
 
-if (!$conn) {
-    echo "<marquee>Not connected to db</marquee> \n";
+if(in_array("pgsql",$_EXT)){
+  $_PGSQL = TRUE;
+
+    $conn = @pg_connect('host='._SYS['host'].' port='._SYS['port'].' dbname='._SYS['dbname'].' user='._SYS['username'].' password='._SYS['password']);
+    DEFINE('_CON',$conn);
+
+}else{
+  $_PGSQL = FALSE;
 }
-
-?>

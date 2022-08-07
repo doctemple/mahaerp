@@ -800,3 +800,22 @@ $(document).ready(function(){
 
 })  
 
+var appended = false, bookmark = document.createElement("div");
+bookmark.id = "back-to-top";
+bookmark.innerHTML = '<a href="#" class="btn btn-primary back-to-top" role="button" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></a>';
+ 
+onscroll = function() {
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  if (scrollTop > 500) {
+    if (!appended) {
+      document.body.appendChild(bookmark);
+      appended = true;
+    }
+  } else {
+    if (appended) {
+      document.body.removeChild(bookmark);
+      appended = false;
+    }
+  }
+};
+

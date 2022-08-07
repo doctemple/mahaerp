@@ -23,7 +23,7 @@ DEFINE('_MENU', array(
             "del"=>array("คลังสินค้า","การจัดส่งสินค้า","delivery","wh"),
             "aj"=>array("คลังสินค้า","ปรับปรุงคลังสินค้า","adjust","wh"),
 
-            "bil"=>array("บัญชี","ออกบิล/ใบเสร็จรับเงืน","billing","acc"),
+            "bil"=>array("บัญชี","ออกบิล/ใบเสร็จรับเงิน","billing","acc"),
             "col"=>array("บัญชี","วางบิล/รับเซ็ค","collection","acc"),
             "deb"=>array("บัญชี","บัญชีลูกหนี้","debtor","acc"),
             "fol"=>array("บัญชี","บันทึกการติดตาม","follow","acc"),
@@ -39,7 +39,8 @@ DEFINE('_MENU', array(
             "role"=>array("การตั้งค่า","กลุ่ม","users","set"),
             "gra"=>array("การตั้งค่า","สิทธิ","users","set"),
             "eve"=>array("การตั้งค่า","ประวัติการเข้าใช้ระบบ","users","set"),
-            "sys"=>array("การตั้งค่า","ผู้ดูและระบบ","system","set")
+            "sys"=>array("การตั้งค่า","ผู้ดูและระบบ","system","set"),
+            "ud"=>array("ข้อมูลของฉัน","โปรไฟล์","user-detail","set"),
             )
 );
 ?>

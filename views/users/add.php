@@ -1,5 +1,3 @@
-<?php echo breadcrumb("ตั้งค่าผู้ใช้","ตั้งค่า","ผู้ใช้","เพิ่ม"); ?>
-
 <div class="container-fluid">
 
     <div class="card">

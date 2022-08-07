@@ -3,13 +3,14 @@ $_CONFIG['script']['login'] = true;
 ?>
 <div class="row justify-content-center ">
 
-<div class="login-box align-items-center">
-  <p>&nbsp;</p>
+<div class="login-box  align-items-center">
+  <p>&nbsp;</p><p>&nbsp;</p>
   <div class="login-logo">
-    <?php ECHO _SYS['system']; ?>
+    <h1 class="text-light" style="text-shadow: 4px 4px 10px black;"><?php ECHO strtoupper(_SYS['system']); ?></h1>
   </div>
+  <p>&nbsp;</p>
   <!-- /.login-logo -->
-  <div class="card">
+  <div class="card shadow-lg animate__animated animate__zoomIn">
     <?php
     CheckVersion(); 
     ?>

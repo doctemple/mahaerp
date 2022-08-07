@@ -1,12 +1,13 @@
 <div class="container-fluid">
     <?php 
-        $wizard = array(
-        array("ลูกค้าขอใบเสนอราคา",true),
-        array("รายการสถานะการขอราคา",true),
-        array("สร้างใบขอราคา",true),
-        array("ขอราคาซัพพลายเออร์",true)
-        );
-        wizard($wizard);
+$wizard = array(
+    array("ลูกค้าขอใบเสนอราคา",true,"1"),
+    array("รายการสถานะการขอราคา",true,"2"),
+    array("สร้างใบขอราคา",true,"3"),
+    array("ขอราคาซัพพลายเออร์",true,"4")
+  );
+  
+  ECHO wizard($wizard,"ผังกระบวนการขอราคา");
         ?>
 
 <div class="card">

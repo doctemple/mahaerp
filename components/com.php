@@ -9,8 +9,9 @@ function HTML5_OPEN(){
     <title>'._SYS['system'].'</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/ionicons.min.css">
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/animate.min.css">
     <link rel="stylesheet" href="dist/css/custom.css">
     </head>
     <body class="hold-transition sidebar-mini" >';
@@ -22,11 +23,11 @@ function HTML5_CLOSE(){
 }
 
 function breadcrumb($title="TITLE",$p1="",$p2="",$p3=""){
-$text = '<div class="content-header">
+$text = '<div class="content-header animate__animated animate__fadeInDown ">
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">'.$title.'</h1>
+                <h1 class="m-0"><i class="fas fa-cog fa-spin "></i> '.$title.'</h1>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -62,42 +63,58 @@ return $text;
     );
     */
 
-function wizard($wizard,$title=""){
-?>
-<div id="wizard">
-    <div class="card">
+function wizard($wizard,$title="ผังค์กระบวนการ"){
+    // collapseOneWizard add class="collapse"
+$html =
+'<div id="wizard">
+    <div class="card card-sm">
         <div class="card-header">
             <a class="card-link" data-toggle="collapse" href="#collapseOneWizard">
-                <i class="fas fa-angle-double-right"></i> ผังค์กระบวนการ <?php echo $title; ?>
+                <i class="fas fa-angle-double-right"></i> '.$title.' <?php echo $title; ?>
             </a>
+            <div class="card-tools">
+
+          <button type="button" class="btn btn-tool" data-card-widget="remove">
+            <i class="fas fa-times"></i>
+          </button>
+            </div>
         </div>
         <div id="collapseOneWizard" class="collapse" data-parent="#wizard">
             <div class="card-body">
-                <div class="row bs-wizard" style="border-bottom:0;">
+                <div class="row bs-wizard" style="border-bottom:0;">';
 
-                    <?php for($i=0;$i<sizeof($wizard);$i++){ 
+ for($i=0;$i<sizeof($wizard);$i++){ 
                 $active = ($wizard[$i][1]==true)?'complete':'disabled';
-                ?>
-                    <div class="col bs-wizard-step <?php echo $active; ?>">
-                        <div class="text-center bs-wizard-stepnum"><?php echo $i+1; ?></div>
+
+                    $html .= '<div class="col bs-wizard-step '.$active.' ">
+                        <div class="text-center bs-wizard-stepnum "><strong>'.$wizard[$i][2].'</strong></div>
                         <div class="progress">
                             <div class="progress-bar"></div>
                         </div>
-                        <a href="#" class="bs-wizard-dot"></a>
-                        <div class="bs-wizard-info text-center"><?php echo $wizard[$i][0]; ?></div>
-                    </div>
-                    <?php } ?>
-                </div>
-
+                        <a href="#" class="bs-wizard-dot shadow"></a>
+                        <div class="bs-wizard-info text-center">'.$wizard[$i][0].'</div>
+                    </div>';
+                     } 
+  $html .= '</div>
             </div>
         </div>
-    </div>
-    <?php } 
+    </div>';
+    return $html;
+ } 
 
 function card($title="&nbsp;",$body="TEXT BODY",$foot="&nbsp;"){
     return
         '<div class="card">
-            <div class="card-header">'.$title.'</div>
+            <div class="card-header">'.$title.'
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="maximize">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+            </div>
+            </div>
             <div class="card-body">'.$body.'</div>
             <div class="card-footer">'.$foot.'</div>
         </div>';
@@ -112,7 +129,7 @@ function alert($body="TEXT BODY",$color="info"){
 
 function content($body="TEXT BODY"){
     return 
-        '<div class="container-fluid t-20">
+        '<div class="container-fluid ">
             '.$body.'
         </div>';
 } 
@@ -145,11 +162,17 @@ function CheckVersion(){
     ';
 }
 
-function array2TBCol($array){
+function array2TBCol($array,$show=array()){
     $html = '<table class="table">';
         $html .= '';
-        foreach( $array as $key=>$value){
-            $html .= '<tr><td><strong>' . strtoupper(htmlspecialchars($key)) . '</strong></td><td>' . htmlspecialchars($value) . '</td></tr>';
+        if(sizeof($show)>0){
+            for($i=0;$i<sizeof($show);$i++){
+                $html .= '<tr><td><strong>' . strtoupper(htmlspecialchars($show[$i])) . '</strong></td><td>' . htmlspecialchars($array[$show[$i]]) . '</td></tr>';
+            }
+        }else{
+            foreach( $array as $key=>$value){
+                $html .= '<tr><td><strong>' . strtoupper(htmlspecialchars($key)) . '</strong></td><td>' . htmlspecialchars($value) . '</td></tr>';
+            }
         }
         $html .= '';
 
@@ -166,7 +189,8 @@ function array2Table($array,$head=array(),$crud=false){
                 } 
             }
         foreach( $array as $key=>$value){
-            $html .= '<tr><td ><strong>' . strtoupper(htmlspecialchars($key)) . '</strong></td>';
+            $html .= '<tr>';
+            $html .='<td ><strong>' . strtoupper(htmlspecialchars($key)) . '</strong></td>';
             
             foreach( $value as $key2=>$value2){
                 $html .= '<td>' . htmlspecialchars($value2) . '</td>';
@@ -214,7 +238,7 @@ function Col($set=array(),$text1="",$text2="",$text3="",$text4="") {
         if($text2!=""){ $html .= '<div class="col-sm'; if(isset($set[1])){ $html .= '-'.$set[1]; } $html .='">'.$text2.'</div>'; }
         if($text3!=""){ $html .= '<div class="col-sm'; if(isset($set[2])){ $html .= '-'.$set[2]; } $html .='">'.$text3.'</div>'; }
         if($text4!=""){ $html .= '<div class="col-sm'; if(isset($set[3])){ $html .= '-'.$set[3]; } $html .='">'.$text4.'</div>'; }
-    $html.="</div>";
+    $html.='</div>';
     return $html;
 }
 

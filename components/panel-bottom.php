@@ -1,17 +1,18 @@
   <!-- Main Footer -->
-  <footer class="main-footer ">
-    <div class="user-panel float-right pb-1 d-flex">
+  <footer class="main-footer shadow-lg">
+
+    <div class="user-panel float-right pb-1 d-flex animate__animated animate__fadeInLeft animate__fast" style="margin-right:80px;">
       <img src="dist/img/logo.jpg" alt="User Avatar" class="img-size-50 img-circle">
       <div class="info">
         <a href="#" class="d-block text-secondary"><?php echo _SYS['system'].' '._SYS['version']; ?></a>
       </div>
     </div>
-          <div class="user-panel  pb-1 d-flex">
+          <div class="user-panel  pb-1 d-flex animate__animated animate__fadeInRight animate__fast" >
             <div class="image">
               <img src="dist/img/avatar5.png" width="80" class="img-size-50 img-circle" alt="User Image">
             </div>
             <div class="info">
-              <a href="#" class="d-block text-success">
+              <a href="?ud" class="d-block text-success" >
               <?php echo $user_online; ?>
               </a>
             </div>
@@ -38,3 +39,4 @@
             </div>
           </div>
   </footer>
+

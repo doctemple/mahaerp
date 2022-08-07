@@ -2,7 +2,7 @@
 $_CONFIG['script']['chart'] = true;
 $_CONFIG['script']['dashboard3'] = true;
 ?>
-<div class="content-header">
+<div class="content-header animate__animated animate__fadeInDown animate__delay-1s">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
@@ -18,7 +18,7 @@ $_CONFIG['script']['dashboard3'] = true;
       </div><!-- /.container-fluid -->
     </div>
 
-    <div id="container1" class="content" >
+    <div id="container1" class="content animate__animated animate__fadeInDown" >
       <div id="container2" class="container-fluid" >
         <div class="row">
           <div class="col-lg-6">

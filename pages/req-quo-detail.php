@@ -2,12 +2,13 @@
 
 <?php 
 $wizard = array(
-  array("ลูกค้าขอใบเสนอราคา",true),
-  array("รายการสถานะการขอราคา",true),
-  array("สร้างใบขอราคา",true),
-  array("ขอราคาซัพพลายเออร์",false)
+  array("ลูกค้าขอใบเสนอราคา",true,"1"),
+  array("รายการสถานะการขอราคา",true,"2"),
+  array("สร้างใบขอราคา",true,"3"),
+  array("ขอราคาซัพพลายเออร์",false,"4")
 );
-wizard($wizard,"ขอใบเสนอราคา");
+
+ECHO wizard($wizard,"ผังกระบวนการขอราคา");
 
 $reqid = $_PARAM[1];
 ?>
@@ -218,7 +219,7 @@ $reqid = $_PARAM[1];
             <div class="modal-header">
                 <h4 class="modal-title">เพิ่มสินค้า</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="modal-body">

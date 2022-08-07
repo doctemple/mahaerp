@@ -6,7 +6,7 @@ $_CONFIG['script']['login'] = true;
 <div class="login-box align-items-center">
   <p>&nbsp;</p>
   <div class="login-logo">
-    <b>MAHA</b>Technology
+    <?php ECHO _SYS['system']; ?>
   </div>
   <!-- /.login-logo -->
   <div class="card">

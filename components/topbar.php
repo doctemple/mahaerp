@@ -6,7 +6,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="main.php" class="nav-link"><i class="nav-icon fas fa-home"></i> </a>
+        <a href="?" class="nav-link"><i class="nav-icon fas fa-home"></i> </a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="?help" class="nav-link">ช่วยเหลือ</a>

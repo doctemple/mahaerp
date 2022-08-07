@@ -11,25 +11,27 @@
               <img src="dist/img/avatar5.png" width="80" class="img-size-50 img-circle" alt="User Image">
             </div>
             <div class="info">
-              <a href="#" class="d-block text-secondary">โกศล</a>
+              <a href="#" class="d-block text-success">
+              <?php echo $user_online; ?>
+              </a>
             </div>
 
             <div class="image">
-              <img src="dist/img/avatar3.png" width="80" class="img-size-50 img-circle" alt="User Image">
+              <img src="dist/img/avatar3.png" width="80" class="img-size-50 img-circle img-gray" alt="User Image">
             </div>
             <div class="info">
               <a href="#" class="d-block text-secondary">หน่อย</a>
             </div>
 
             <div class="image">
-              <img src="dist/img/avatar2.png" width="80" class="img-size-50 img-circle" alt="User Image">
+              <img src="dist/img/avatar2.png" width="80" class="img-size-50 img-circle img-gray" alt="User Image">
             </div>
             <div class="info">
               <a href="#" class="d-block text-secondary">ส้ม</a>
             </div>
 
             <div class="image">
-              <img src="dist/img/avatar2.png" width="80" class="img-size-50 img-circle" alt="User Image">
+              <img src="dist/img/avatar2.png" width="80" class="img-size-50 img-circle img-gray" alt="User Image">
             </div>
             <div class="info">
               <a href="#" class="d-block text-secondary">ปอย</a>

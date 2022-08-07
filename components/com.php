@@ -149,7 +149,7 @@ function array2TBCol($array){
     $html = '<table class="table">';
         $html .= '';
         foreach( $array as $key=>$value){
-            $html .= '<tr><td><strong>' . ucwords(htmlspecialchars($key)) . '</strong></td><td>' . htmlspecialchars($value) . '</td></tr>';
+            $html .= '<tr><td><strong>' . strtoupper(htmlspecialchars($key)) . '</strong></td><td>' . htmlspecialchars($value) . '</td></tr>';
         }
         $html .= '';
 
@@ -189,7 +189,8 @@ function array2Table($array,$head=array(),$crud=false){
     return $html;
 }
 
-function array2list( $array ) {
+function array2List( $array ) {
+    $array = array_values($array);
     $html = '<ul>';
     for($i=0;$i<sizeof($array);$i++) {
         $html .= "<li> {$array[$i]} </li>";
@@ -200,6 +201,7 @@ function array2list( $array ) {
 
 function array2Badge( $array ) {
     $html = '';
+    $array = array_values($array);
     for($i=0;$i<sizeof($array);$i++) {
         $html .= '<span class="badge badge-info" style="margin:2px;">'.$array[$i].'</span>';
     }

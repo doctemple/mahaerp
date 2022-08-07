@@ -6,6 +6,9 @@ include_once(_PATH.'/controllers/conn.php');
 include_once(_PATH.'/controllers/menu.php');
 include_once(_PATH.'/controllers/script.php');
 include(_PATH.'/components/com.php');
+include_once(_PATH.'/models/main.php');
+include_once(_PATH.'/controllers/main.php');
+
 ECHO HTML5_OPEN();
 ?>
 <div class="wrapper">

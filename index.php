@@ -10,7 +10,7 @@ if (strpos($_SERVER['QUERY_STRING'], '&') !== false) {
 }
 DEFINE('_ROUTE',$_ROUTE);
 DEFINE('_PATH',dirname(__FILE__));
-DEFINE('_LAST',date('d.m.Y H:i:s',filemtime(_PATH)));
+DEFINE('_LAST',date('d.m.Y H:i:s',filemtime(_PATH."/.git")));
 
 include(_PATH."/core/start.php");
 

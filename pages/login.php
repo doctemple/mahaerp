@@ -1,7 +1,7 @@
 <?php
 $_CONFIG['script']['login'] = true; 
 ?>
-<div class="row justify-content-center ">
+<div class="row justify-content-center " style="height:100vh; margin-top:5%;">
 
 <div class="login-box  align-items-center">
   <p>&nbsp;</p><p>&nbsp;</p>
@@ -10,7 +10,7 @@ $_CONFIG['script']['login'] = true;
   </div>
   <p>&nbsp;</p>
   <!-- /.login-logo -->
-  <div class="card shadow-lg animate__animated animate__zoomIn">
+  <div class="card shadow-lg animate__animated animate__zoomIn ">
     <?php
     CheckVersion(); 
     ?>

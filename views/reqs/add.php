@@ -1,13 +1,3 @@
-<?php 
-include_once('views/head.php');
-include_once('views/navbar.php');
-?>
-<script>
-$(document).ready(function() {
-
-});
-</script>
-<!-- edit Section -->
 <section id="page_add" class="page_add">
     <div class="container">
         <div class="row">
@@ -58,6 +48,3 @@ $(document).ready(function() {
     </div>
 </section>
 <br />
-<?php 
-include_once('views/footer.php');
-?>

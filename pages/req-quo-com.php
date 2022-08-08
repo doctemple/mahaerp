@@ -87,7 +87,7 @@
                             </table>
                         </div>
                         <div class="card-footer">
-                            <div class="btn btn-warning">เลือกซัพพลายเออร์</div>
+                            อ้างอิง : ใบขอราคา [PQV0014]
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,3 @@
-<?php 
-include_once('views/head.php');
-include_once('views/navbar.php');
-?>
 <div class="container">
     <div class="row">
         <div class="tab-pane active" id="list">
@@ -49,7 +45,3 @@ include_once('views/navbar.php');
             </ul>
         </div>
     </div>
-
-    <?php 
-include_once('views/footer.php');
-?>

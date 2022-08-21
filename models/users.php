@@ -7,6 +7,7 @@ function count_comm($conn){
 	return (int)pg_fetch_result($result, 0, 0);
 
 }
+
 function get_comm_paging($conn,$page,$count_per_page) {
 	$offset = ($page - 1) * $count_per_page;
 

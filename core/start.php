@@ -3,7 +3,6 @@ session_start();
 include_once(_PATH.'/core/config.php');
 include_once(_PATH.'/controllers/conn.php');
 
-include_once(_PATH.'/controllers/menu.php');
 include_once(_PATH.'/controllers/script.php');
 include(_PATH.'/components/com.php');
 include_once(_PATH.'/models/main.php');

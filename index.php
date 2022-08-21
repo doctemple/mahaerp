@@ -12,12 +12,29 @@ DEFINE('_ROUTE',$_ROUTE);
 DEFINE('_PATH',dirname(__FILE__));
 DEFINE('_LAST',date('d.m.Y H:i:s',filemtime(_PATH."/.git")));
 
-include(_PATH."/core/start.php");
+include(_PATH."/core/start.php");       
 
-if(isset(_MENU[$_ROUTE][2])){
-    echo breadcrumb(_MENU[$_ROUTE][1],_MENU[$_ROUTE][0],_MENU[$_ROUTE][1]);
 
-        include(_PATH."/pages/"._MENU[$_ROUTE][2].".php");
+
+if(isset($_ROUTE) && $_ROUTE!=""){
+    $r_pages = @get_page($conn,$_ROUTE);
+    if($r_pages){
+    $r_page = trim($r_pages['fld_page']);   
+    }else{
+        $r_page = "";
+    }
+    if($r_page!=""){
+        $subname = @get_subName($conn,$r_pages['fld_subcode']);
+        if($subname){
+            echo breadcrumb($r_pages['fld_pname'],$subname,$r_pages['fld_pname']);
+        }else{
+            echo breadcrumb($r_pages['fld_pname'],$r_pages['fld_pname']);
+        }
+
+        include(_PATH."/pages/{$r_page}.php");
+    }else{
+        include(_PATH."/pages/pagenot.php");
+    }
 
 }else{
     if(isset($_SESSION['aut']) && $_SESSION['aut']==true){

@@ -88,7 +88,6 @@
 
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: rgb(255, 251, 236) !important;
 }
 
 textarea:active {
@@ -96,8 +95,8 @@ textarea:active {
   border-color: #fbe8aa !important;
 }
 
-.menu-open:hover {
-  background: rgb(255, 243, 221) !important;
+.menu-open {
+  padding:6px !important;
 }
 
 textarea:focus {
@@ -135,3 +134,12 @@ table tr:hover {
   transform: scale(1.4);
   z-index:5000 !important;
 }
+
+.multi input[type=radio] {
+    height: 18px !important;
+}
+
+.bg-success-light{ background-color: #d1ffcb !important; }
+.bg-primary-light{ background-color: #cbecff !important; }
+.bg-warning-light{ background-color: #fff5cb !important; }
+.bg-secondary-light{ background-color: #f3f3f3 !important; }

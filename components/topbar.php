@@ -11,6 +11,9 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="?help" class="nav-link"><i class="fas fa-question-circle"></i> ช่วยเหลือ</a>
       </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="?help" class="nav-link"><i class="fas fa-asterisk"></i> <?php echo _ROUTE; ?></a>
+      </li>
     </ul>
 
     <!-- Right navbar links -->

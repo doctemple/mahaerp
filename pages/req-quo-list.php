@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <?php 
         $wizard = array(
-        array("ลูกค้าขอใบเสนอราคา",true,"1"),
-        array("รายการสถานะการขอราคา",true,"2"),
-        array("สร้างใบขอราคา",false,"3"),
-        array("ขอราคาซัพพลายเออร์",false,"4")
-        );
-
-        ECHO content(wizard($wizard,"ผังกระบวนการขอราคา"));
+            array("ลูกค้าขอใบเสนอราคา",true,"1"),
+            array("สร้างใบขอราคา",true,"2"),
+            array("รายการสถานะการขอราคา",true,"3"),
+            array("ขอราคาซัพพลายเออร์",false,"4")
+            );
+    
+            ECHO content(wizard($wizard,"ผังกระบวนการขอราคา"));
         ?>
 
 
@@ -46,7 +46,7 @@
                         <td>Customer A</td>
                         <td>RQ0014</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i>
+                            <a class="btn btn-secondary" href="?rq&detail=rq0014"><i class="fas fa-file-alt"></i>
                                 ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
@@ -55,9 +55,10 @@
                         <td>
                             <span class="badge badge-success"><i class="fa fa-user"></i> มงคล ฟิล์ม จำกัด</span>
                             <span class="badge badge-success"><i class="fa fa-user"></i> AM Control</span>
+                            <span class="badge badge-success"><i class="fa fa-user"></i> PLM Tech</span>
                         </td>
                         <td>
-                            <a href="?rqc" class="btn btn-primary"><i class="fa fa-cog"></i> เปรียบเทียบราคา</a>
+                            <a href="?rqc&RQ0014" class="btn btn-primary"><i class="fa fa-cog"></i> เปรียบเทียบราคา</a>
                         </td>
 
                     </tr>
@@ -66,7 +67,7 @@
                         <td>Customer B</td>
                         <td>RQ0015</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i>
+                            <a class="btn btn-secondary" href="?rq&detail=rq0014"><i class="fas fa-file-alt"></i>
                                 ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
@@ -85,7 +86,7 @@
                         <td>มาหา เทคโนโลยี</td>
                         <td>RQ0016</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i>
+                            <a class="btn btn-secondary" href="?rq&detail=rq0014"><i class="fas fa-file-alt"></i>
                                 ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
@@ -103,7 +104,7 @@
                         <td>Customer D</td>
                         <td>RQ0017</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i>
+                            <a class="btn btn-secondary" href="?rq&detail=rq0014"><i class="fas fa-file-alt"></i>
                                 ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
@@ -121,7 +122,7 @@
                         <td>Customer E</td>
                         <td>RQ0018</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i>
+                            <a class="btn btn-secondary" href="?rq&detail=rq0014"><i class="fas fa-file-alt"></i>
                                 ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
@@ -139,7 +140,7 @@
                         <td>Customer F</td>
                         <td>RQ0019</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i>
+                            <a class="btn btn-secondary" href="?rq&detail=rq0014"><i class="fas fa-file-alt"></i>
                                 ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
@@ -158,7 +159,7 @@
                         <td>Customer G</td>
                         <td>RQ0010</td>
                         <td>
-                            <a class="btn btn-secondary" href="?rqld&rq0014"><i class="fas fa-file-alt"></i>
+                            <a class="btn btn-secondary" href="?rq&detail=rq0014"><i class="fas fa-file-alt"></i>
                                 ข้อมูล</a>
                         </td>
                         <td>14/5/65 15:00PM</td>
@@ -170,12 +171,72 @@
 
                         </td>
                     </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Customer H</td>
+                        <td>RQ0014</td>
+                        <td>
+                            <a class="btn btn-secondary" href="?rq&detail=rq0014"><i class="fas fa-file-alt"></i>
+                                ข้อมูล</a>
+                        </td>
+                        <td>14/5/65 15:00PM</td>
+                        <td>ส้ม</td>
+                        <td><span class="badge bg-warning">รอ..เพิ่มรายละเอียด</span></td>
+                        <td>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
+        <div class="footer">
+            &nbsp;
+        </div>
         <!-- /.card-body -->
     </div>
-</div>
+
+
+    <div class="alert alert-light alert-dismissible">
+        <p><strong>หมายเหตุ</strong> ตารางสถานะ</p>
+
+
+        <table id="example2" class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ลำดับ</th>
+                    <th>สถานะ</th>
+                    <th>อธิบาย</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>รอ.. เพิ่มรายละเอียด</td>
+                    <td>หลังจาก เซล เพิ่มข้อมูล ลูกค้าขอใบเสนอราคา แล้วจะต้องเพิ่มรายละเอียด สินค้าใรระบบ</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>รอ.. เลือกซัพพลายเออร์</td>
+                    <td>ฝ่ายจัดซื้อ จะทำการเลือก ซัพพลายเออร์ เพื่อส่งรายการขอราคา</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>รอ.. ราคา</td>
+                    <td>หลังจาก ฝ่ายจัดซื้อ ส่งรายการขอราคา แล้ว จะต้องรอให้เจ้าหน้าที่กรอกข้อมูลราคา ให้ครบ
+                        แต่ถ้ารอนานเกินกำหนด สถานะจะเป็น สีแดง</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ได้ราคาครบ</td>
+                    <td>กรณี ที่ 1) เลือกซัพพลายเออร์ รายเดียว สามารถกดปุ่ม สร่้างใบเสนอราคาได้เลย<br>
+                        กรณี ที่ 2) เลือกซัพพลายเออร์ หลายราย การดำเนินการต่อ จะให้กดปุ่ม เปรียบเทียบราคา<br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
 </div>

@@ -1,66 +1,65 @@
 <div class="container-fluid">
+    <?php 
+        $wizard = array(
+        array("ลูกค้าขอใบเสนอราคา",true,"1"),
+        array("สร้างใบขอราคา",true,"2"),
+        array("รายการสถานะการขอราคา",true,"3"),
+        array("ขอราคาซัพพลายเออร์",false,"4")
+        );
 
-<?php 
-$wizard = array(
-  array("ลูกค้าขอใบเสนอราคา",true,"1"),
-  array("รายการสถานะการขอราคา",true,"2"),
-  array("สร้างใบขอราคา",true,"3"),
-  array("ขอราคาซัพพลายเออร์",false,"4")
-);
+        ECHO wizard($wizard,"ผังกระบวนการขอราคา");
 
-ECHO wizard($wizard,"ผังกระบวนการขอราคา");
-
-$reqid = $_PARAM[1];
-?>
+        $reqid = $_PARAM[1];
+    ?>
 
     <div class="card">
- 
+
         <div class="card-body">
-        <h5>อ้างอิง : ใบขอเสนอราคาลูกค้า [<?php print($reqid); ?>]</h5>       
+            <h5>อ้างอิง : ใบขอเสนอราคาลูกค้า [<?php print($reqid); ?>]</h5>
             <div class="row">
 
-            <div class="col-sm align-self-start">
-                <div class="text-muted">
-                    <p class="text-sm">ลูกค้า
-                        <b class="d-block">บริษัท เกษมชัยเจริญ Co.,ltd.</b>
-                    </p>
-                    <p class="text-sm">ที่อยู่
-                        <b class="d-block">13/322 ซอยพัฒนา2 บางที่ ท่าพระ กรุงเทพมหนคร 18765</b>
-                    </p>
-                    <p class="text-sm">โครงการ
-                        <b class="d-block">เกษม2 ท่าพระ</b>
-                    </p>
+                <div class="col-sm align-self-start">
+                    <div class="text-muted">
+                        <p class="text-sm">ลูกค้า
+                            <b class="d-block">บริษัท เกษมชัยเจริญ Co.,ltd.</b>
+                        </p>
+                        <p class="text-sm">ที่อยู่
+                            <b class="d-block">13/322 ซอยพัฒนา2 บางที่ ท่าพระ กรุงเทพมหนคร 18765</b>
+                        </p>
+                        <p class="text-sm">โครงการ
+                            <b class="d-block">เกษม2 ท่าพระ</b>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm align-self-start">
-                <div class="text-muted">
-                    <p class="text-sm">ผู้ติดต่อ
-                        <b class="d-block">คุณ ดอกรัก</b>
-                    </p>
-                    <p class="text-sm">โทร
-                        <b class="d-block">098-232-6373</b>
-                    </p>
-                    <p class="text-sm">อีเมล
-                        <b class="d-block">absjs@gmail.com</b>
-                    </p>
+                <div class="col-sm align-self-start">
+                    <div class="text-muted">
+                        <p class="text-sm">ผู้ติดต่อ
+                            <b class="d-block">คุณ ดอกรัก</b>
+                        </p>
+                        <p class="text-sm">โทร
+                            <b class="d-block">098-232-6373</b>
+                        </p>
+                        <p class="text-sm">อีเมล
+                            <b class="d-block">absjs@gmail.com</b>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm align-self-start">
+                <div class="col-sm align-self-start">
 
-                <h5 class="mt-5 text-muted">files</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-file-word"></i>
-                            requirements.docx</a>
-                    </li>
-                    <li>
-                        <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-file-pdf"></i>
-                            auauasus.pdf</a>
-                    </li>
-                </ul>
+                    <h5 class="mt-5 text-muted">files</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-file-word"></i>
+                                requirements.docx</a>
+                        </li>
+                        <li>
+                            <a href="" class="btn-link text-secondary"><i class="far fa-fw fa-file-pdf"></i>
+                                auauasus.pdf</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div id="accordion">
@@ -117,7 +116,7 @@ $reqid = $_PARAM[1];
                         <td>ตัว</td>
                         <td>รอ</td>
                         <td>
-                        <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
@@ -132,7 +131,7 @@ $reqid = $_PARAM[1];
                         <td>ตัว</td>
                         <td>รอ</td>
                         <td>
-                        <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
@@ -147,7 +146,7 @@ $reqid = $_PARAM[1];
                         <td>ตัว</td>
                         <td>1,345</td>
                         <td>
-                        <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
@@ -162,7 +161,7 @@ $reqid = $_PARAM[1];
                         <td>ตัว</td>
                         <td>1,345</td>
                         <td>
-                        <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
@@ -177,7 +176,7 @@ $reqid = $_PARAM[1];
                         <td>ตัว</td>
                         <td>1,345</td>
                         <td>
-                        <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
@@ -192,7 +191,7 @@ $reqid = $_PARAM[1];
                         <td>ตัว</td>
                         <td>1,345</td>
                         <td>
-                        <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
+                            <a class="btn btn-sm btn-warning" href="#"><i class="fa fa-edit"></i></a>
                             <a class="btn btn-sm btn-danger" href="#"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
@@ -201,7 +200,7 @@ $reqid = $_PARAM[1];
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-        <a class="btn btn-success" href="?rql"><i class="fa fa-send"></i> ยืนยันขอราคา</a>
+            <a class="btn btn-success" href="?rql"><i class="fa fa-send"></i> ยืนยันขอราคา</a>
         </div>
     </div>
 
@@ -216,7 +215,7 @@ $reqid = $_PARAM[1];
 <div class="modal fade" id="modal-xl">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-primary">
                 <h4 class="modal-title">เพิ่มสินค้า</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fas fa-times"></i>
@@ -265,8 +264,6 @@ $reqid = $_PARAM[1];
                 <button type="button" class="btn btn-primary">เพิ่ม</button>
             </div>
         </div>
-        <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dialog -->
+
 </div>
-<!-- /.modal -->

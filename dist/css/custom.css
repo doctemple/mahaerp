@@ -143,3 +143,40 @@ table tr:hover {
 .bg-primary-light{ background-color: #cbecff !important; }
 .bg-warning-light{ background-color: #fff5cb !important; }
 .bg-secondary-light{ background-color: #f3f3f3 !important; }
+
+
+.a4 {
+    width: 21cm;
+    min-height: 29.7cm;
+    margin: 0cm auto;
+    padding:1cm;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 12px;
+}
+.subpage {
+    height: 256mm;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    .a4 {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        padding:0;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+        font-size: 16px;
+    }
+
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

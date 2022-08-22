@@ -1,19 +1,19 @@
 <?php
 define('_TB_','user_tbl');
 
-function count_comm($conn){
+function count_comm(){
 	// Get the total number of results
-	$result = pg_query($conn, "SELECT count(*) FROM "._TB_." where fld_type<>'admin'"); 
+	$result = pg_query(_CON, "SELECT count(*) FROM "._TB_." where fld_type<>'admin'"); 
 	return (int)pg_fetch_result($result, 0, 0);
 
 }
 
-function get_comm_paging($conn,$page,$count_per_page) {
+function get_comm_paging($page,$count_per_page) {
 	$offset = ($page - 1) * $count_per_page;
 
 	$sql = "SELECT * from "._TB_." where fld_type<>'admin' ORDER  BY fld_username LIMIT  $count_per_page offset $offset";
 	
-	$result = pg_query($conn,$sql);
+	$result = pg_query(_CON,$sql);
 	if (!$result) {
 	    echo "An error occurred.\n";
 	    exit;
@@ -24,8 +24,8 @@ function get_comm_paging($conn,$page,$count_per_page) {
 
 }
 
-function get_comms($conn) {
-	$result = pg_query($conn, "SELECT * FROM "._TB_." ");
+function get_comms() {
+	$result = pg_query(_CON, "SELECT * FROM "._TB_." ");
 	if (!$result) {
 	    echo "An error occurred.\n";
 	    exit;
@@ -36,8 +36,8 @@ function get_comms($conn) {
 
 }
 
-function get_comm($conn,$id) {
-	$result = pg_query($conn, "SELECT * FROM "._TB_." where fld_userid=".$id);
+function get_comm($id) {
+	$result = pg_query(_CON, "SELECT * FROM "._TB_." where fld_userid=".$id);
 	if (!$result) {
 	    echo "An error occurred.\n";
 	    exit;
@@ -48,10 +48,10 @@ function get_comm($conn,$id) {
 
 }
 
-function del_comm($conn,$where){
+function del_comm($where){
 	
 	//$where = array("id" => $id);
-	$res = pg_delete($conn, _TB_, $where);	
+	$res = pg_delete(_CON,_TB_, $where);	
 	if ($res) {
 	  //echo "Deleted successfully.";
 	  $is_deleted = true;
@@ -62,24 +62,24 @@ function del_comm($conn,$where){
 	return $is_deleted ;
 }
 
-function update_comm($conn,$data,$where_condition){
+function update_comm($data,$where_condition){
 	//$where_condition = array('name'=>'Soeng');
 	//$data = array("name" => "Kanel");
 
-	$res = pg_update($conn, _TB_, $data, $where_condition);
+	$res = pg_update(_CON, _TB_, $data, $where_condition);
 	if ($res) {
 	  	//echo "Data is updated: $res";
 		$is_updated = true;
 	} else {
 		 //echo "error in input.. <br />";
-		 //echo pg_last_error($conn);
+		 //echo pg_last_error(_CON);
 		$is_updated = false;
 	}
 	return $is_updated;
 }
 
 
-function insert_comm($conn, $users){
+function insert_comm($users){
 	/* 
 	Test case
 	$user1 = array(
@@ -109,13 +109,13 @@ function insert_comm($conn, $users){
 	*/
 	// Insert one by one
 	foreach ($users as $key => $user) {
-	    $res = pg_insert($conn, _TB_, $user);
+	    $res = pg_insert(_CON, _TB_, $user);
 	    if ($res) {
 	      //echo "Inserted user: ".$user['name']." <br />";
 	      $is_inserted = true;
 		
 	    } else {
-	      echo pg_last_error($conn) . " <br />";
+	      echo pg_last_error(_CON) . " <br />";
 	      $is_inserted = false;	
 	    }
 	}

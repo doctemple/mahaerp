@@ -1,17 +1,16 @@
+
 <script src="dist/js/vue.min.js"></script>
 <div  class="container-fluid">
-
-    <?php 
-        $wizard = array(
-                array("ปรับปรุงราคาสินค้า",true,"5"),
-                array("เปรียบเทียบราคา",true,"6"),
-                array("กำหนดราคาเสนอขาย",true,"7"),
-                array("ส่งใบเสนอราคา",false,"8")
-                );
-                
-                ECHO content(wizard($wizard,"ผังกระบวนการเสนอราคา"));
-
-$reqid = $_PARAM[1];
+<?php 
+    $wizard = array(
+        array("เพิ่มข้อมูล<br>ลูกค้าขอใบเสนอราคา",true,"ขั้นตอนที่ 1"),
+        array("เพิ่มรายการสินค้า<br>เพื่อเสนอราคา",true,"ขั้นตอนที่ 2"),
+        array("ติดตาม<br>รายการสถานะการขอราคา",true,"ขั้นตอนที่ 3"),
+        array("เปรียบเทียบราคา<br>เลือกซัพพลายเออร์",true,"ขั้นตอนที่ 4"),
+        array("กำหนดราคาขาย<br>ประเมินกำไร",true,"ขั้นตอนที่ 5"),
+        array("ยืนยัน<br>ส่งใบเสนอราคา",false,"ขั้นตอนที่ 6")
+    );
+    ECHO content(wizard($wizard,"ผังกระบวนการเสนอราคา"));
 ?>
 
     <div class="card">
@@ -146,7 +145,7 @@ $reqid = $_PARAM[1];
         </div>
         <!-- /.card-body -->
         <div class="card-footer text-right">
-            <a class="btn btn-success" href="?rql"><i class="fa fa-send"></i> ยืนยันราคาเสนอขาย</a>
+            <a class="btn btn-success" href="?quo&qu&confirm=quo001"><i class="fa fa-send"></i> ยืนยันราคาเสนอขาย</a>
         </div>
     </div>
 

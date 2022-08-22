@@ -66,7 +66,7 @@ return $text;
 function wizard($wizard,$title="ผังค์กระบวนการ"){
     // collapseOneWizard add class="collapse"
 $html =
-'<div id="wizard">
+'<div id="wizard" class="no-print">
     <div class="card card-sm">
         <div class="card-header">
             <a class="card-link" data-toggle="collapse" href="#collapseOneWizard">
@@ -79,7 +79,7 @@ $html =
           </button>
             </div>
         </div>
-        <div id="collapseOneWizard" class="collapse" data-parent="#wizard">
+        <div id="collapseOneWizard"  data-parent="#wizard">
             <div class="card-body">
                 <div class="row bs-wizard" style="border-bottom:0;">';
 

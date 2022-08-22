@@ -5,7 +5,7 @@ $dataset['id'] = "fld_userid";
 //show comm list
 if ( !isset($_GET['edit']) && !isset($_GET['del'])&& !isset($_GET['add']) ){
 	$countPerPage = 10;
-	$totalResultCount  = count_comm($conn);
+	$totalResultCount  = count_comm();
 
 	// The ceil function will round floats up.
 	$numberOfPages = ceil($totalResultCount / $countPerPage);
@@ -24,14 +24,14 @@ if ( !isset($_GET['edit']) && !isset($_GET['del'])&& !isset($_GET['add']) ){
 	    $page = $numberOfPages;
 	}
 
-	${$comm} = get_comm_paging($conn,$page,$countPerPage);
+	${$comm} = get_comm_paging($page,$countPerPage);
 
 	include('views/'.$comm.'/list.php');
 } 
 //deleted action
 elseif (isset($_GET['del'])){
 	$where = array($dataset['id'] => $_GET['del']);
-	del_comm($conn,$where);	
+	del_comm($where);	
 	print("<script>location = '?use'; </script>");
 }
 
@@ -49,7 +49,7 @@ elseif (isset($_GET['edit']) && is_numeric($_GET['edit'])){
 			$_POST['fld_password'] = md5($_POST['fld_password']);
 			unset($_POST['confirm_password']);
 			$data = $_POST;		
-			$is_updated = update_comm($conn,$data,$where_condition);
+			$is_updated = update_comm($data,$where_condition);
 			if($is_updated){
 				$msg = "Data is updated.";
 				$class_stat = 'class="alert alert-info"';
@@ -61,7 +61,7 @@ elseif (isset($_GET['edit']) && is_numeric($_GET['edit'])){
 		
 	}
 	// get user record informaation.
-	$user = get_comm($conn,$_GET['edit']);
+	$user = get_comm($_GET['edit']);
 	include('views/'.$comm.'/edit.php');
 	
 }
@@ -82,7 +82,7 @@ elseif(isset($_GET['add'])){
 			
 			$data[] = $_POST;
 			//print_r($data);exit;		
-			$is_inserted = insert_comm($conn,$data);
+			$is_inserted = insert_comm($data);
 			if($is_inserted){
 				$msg = "Data is inserted.";
 				$class_stat = 'class="alert alert-info"';

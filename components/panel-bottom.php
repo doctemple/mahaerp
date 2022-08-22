@@ -1,5 +1,5 @@
   <!-- Main Footer -->
-  <footer class="main-footer shadow-lg">
+  <footer class="main-footer shadow-lg no-print">
 
     <div class="user-panel float-right pb-1 d-flex animate__animated animate__fadeInLeft animate__fast" style="margin-right:80px;">
       <img src="dist/img/logo.jpg" alt="User Avatar" class="img-size-50 img-circle">

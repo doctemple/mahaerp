@@ -1,14 +1,15 @@
 <div class="container-fluid">
-    <?php 
+<?php 
 $wizard = array(
-    array("ลูกค้าขอใบเสนอราคา",true,"1"),
-    array("รายการสถานะการขอราคา",true,"2"),
-    array("สร้างใบขอราคา",true,"3"),
-    array("ขอราคาซัพพลายเออร์",true,"4")
+    array("ติดตาม<br>รายการขอราคาสินค้า",true,"ขั้นตอนที่ 1"),
+    array("เพิ่มซัพพลายเออร์<br>ตรวจเช็คสินค้าที่มี",true,"ขั้นตอนที่ 2"),
+    array("ส่งใบขอราคา<br>ซัพพลายเออร์",false,"ขั้นตอนที่ 3"),
+    array("เพิ่มข้อมูลเสนอราคา<br>ตามใบเสนอราคา",false,"ขั้นตอนที่ 4"),
+    array("สร้างใบสั่งซื้อ<br>ตามบิลขาย",false,"ขั้นตอนที่ 5"),
+    array("ติดตาม<br>สถานะสั่งซื้อ",false,"ขั้นตอนที่ 6")
   );
-  
-  ECHO wizard($wizard,"ผังกระบวนการขอราคา");
-        ?>
+            ECHO content(wizard($wizard,"ผังกระบวนการจัดซื้อ"));
+?>
 
 <div class="card">
     <div class="card-body">
@@ -41,7 +42,7 @@ $wizard = array(
                         <th>หน่วยนับ</th>
                         <th>ราคา</th>
                         <th>รวม</th>
-                        <th></th>
+                        <th width="10%"></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -152,7 +153,7 @@ $wizard = array(
         </div>
         <!-- /.card-body -->
         <div class="card-footer text-right">
-            <a class="btn btn-danger" href="rqs-print.php"><i class="fa fa-print"></i> พิมพ์</a>
+            <a class="btn btn-success" href="?rqs&confirm=rq00014"><i class="fas fa-check"></i> ยืนยันข้อมูลขอราคา</a>
         </div>
         </div>
     </div>

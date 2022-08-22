@@ -1,14 +1,15 @@
 <div class="container-fluid">
-    <?php 
-        $wizard = array(
-            array("ลูกค้าขอใบเสนอราคา",true,"1"),
-            array("สร้างใบขอราคา",true,"2"),
-            array("รายการสถานะการขอราคา",true,"3"),
-            array("ขอราคาซัพพลายเออร์",false,"4")
-            );
-    
-            ECHO content(wizard($wizard,"ผังกระบวนการขอราคา"));
-        ?>
+<?php 
+    $wizard = array(
+        array("เพิ่มข้อมูล<br>ลูกค้าขอใบเสนอราคา",true,"ขั้นตอนที่ 1"),
+        array("เพิ่มรายการสินค้า<br>เพื่อเสนอราคา",true,"ขั้นตอนที่ 2"),
+        array("ติดตาม<br>รายการสถานะการขอราคา",true,"ขั้นตอนที่ 3"),
+        array("เปรียบเทียบราคา<br>เลือกซัพพลายเออร์",false,"ขั้นตอนที่ 4"),
+        array("กำหนดราคาขาย<br>ประเมินกำไร",false,"ขั้นตอนที่ 5"),
+        array("ยืนยัน<br>ส่งใบเสนอราคา",false,"ขั้นตอนที่ 6")
+    );
+    ECHO content(wizard($wizard,"ผังกระบวนการเสนอราคา"));
+?>
 
 
     <div class="card">
@@ -77,7 +78,7 @@
                             <span class="badge badge-secondary"><i class="fa fa-user"></i> AM Control</span>
                         </td>
                         <td>
-                            <a class="btn btn-success" href="?quo"><i class="fa fa-signatue"></i>
+                            <a class="btn btn-success" href="?quo&rq0015"><i class="fa fa-signatue"></i>
                                 สร้างใบเสนอราคา</a>
                         </td>
                     </tr>

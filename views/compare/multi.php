@@ -2,8 +2,8 @@
     <div class="card" id="multi">
         <div class="card-header">
             <h3 class="card-title">
-                <a href="?rqc&<?php echo $_PARAM[1]; ?>" class="btn btn-light "><i class="fas fa-walking"></i> สั่งซื้อรายเดียว</a>
-                <a href="?rqc&<?php echo $_PARAM[1]; ?>&mode=2" class="btn  btn-success"><i class="fas fa-people-arrows"></i> แยกสั่งซื้อหลายราย <i class="fas fa-check-circle"></i></a>
+                <a href="?rqc&<?php echo $reqid; ?>" class="btn btn-light "><i class="fas fa-walking"></i> สั่งซื้อรายเดียว</a>
+                <a href="?rqc&<?php echo $reqid; ?>&mode=2" class="btn  btn-success"><i class="fas fa-people-arrows"></i> แยกสั่งซื้อหลายราย <i class="fas fa-check-circle"></i></a>
             </h3>
             <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="maximize">
@@ -263,7 +263,7 @@
 
         </div>
         <div class="card-footer">
-        เปรียบเทียบราคา <?php echo $_PARAM[1]; ?> 
+        เปรียบเทียบราคา <?php echo $reqid; ?> 
 
         <a href="?quo" class="btn btn-primary float-right">สร้างใบเสนอราคา</a>
 

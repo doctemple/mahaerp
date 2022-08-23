@@ -1,6 +1,6 @@
 <?php 
-if (strpos($_SERVER['QUERY_STRING'], '&') !== false) {
-    $_PARAM = explode('&',$_SERVER['QUERY_STRING']);
+if (STRPOS($_SERVER['QUERY_STRING'], '&') !== false) {
+    $_PARAM = EXPLODE('&',$_SERVER['QUERY_STRING']);
     $_ROUTE = $_PARAM[0];
 }else{
     $_PARAM = $_SERVER['QUERY_STRING'];
@@ -9,29 +9,27 @@ if (strpos($_SERVER['QUERY_STRING'], '&') !== false) {
 DEFINE('_PARAM',$_PARAM);
 DEFINE('_ROUTE',$_ROUTE);
 DEFINE('_PATH',dirname(__FILE__));
-DEFINE('_LAST',date('d.m.Y H:i:s',filemtime(_PATH."/.git")));
-
+DEFINE('_LAST',date('d.m.Y H:i:s',FILEMTIME(_PATH."/.git")));
+$pn="fld_page";
+$sc="fld_subcode";
 include(_PATH."/core/start.php");       
-
-
 
 if(isset($_ROUTE) && $_ROUTE!=""){
     $modules = @get_page($conn,$_ROUTE);
     if($modules){
-    $module = trim($modules['fld_page']);   
+    $module = trim($modules[$pn]);   
     }else{
         $module = "";
     }
     if($module!=""){
-        $subname = @get_subName($conn,$modules['fld_subcode']);
+        $subname = @get_subName($conn,$modules[$sc]);
         if($subname){
-            echo breadcrumb($modules['fld_pname'],$subname,$modules['fld_pname']);
+            echo breadcrumb($modules[$pn],$subname,$modules[$pn]);
         }else{
-            echo breadcrumb($modules['fld_pname'],$modules['fld_pname']);
+            echo breadcrumb($modules[$pn],$modules[$pn]);
         }
 
-        //include(_PATH."/modules/{$module}.php");
-        route($module);
+        ROUTE($module);
     }else{
         include(_PATH."/modules/pagenot.php");
     }
@@ -44,5 +42,5 @@ if(isset($_ROUTE) && $_ROUTE!=""){
     }
 }
 
-    include(_PATH."/core/end.php"); 
+include(_PATH."/core/end.php");
 ?>

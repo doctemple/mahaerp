@@ -80,33 +80,7 @@ function update_comm($data,$where_condition){
 
 
 function insert_comm($users){
-	/* 
-	Test case
-	$user1 = array(
-		'name' => "Sok", 
-		'age' => "24", 
-		'country' => "CAMBODIA" 
-		);
 
-	$user2 = array(
-		'name' => "VONGSA", 
-		'age' => 30, 
-		'country' => "Thailand" 
-		);
-
-	$user3 = array(
-		'name' => "DUC", 
-		'age' => 28, 
-		'country' => "Vietname"
-		);
-
-	$users = array(
-		$user1,
-		$user2,
-		$user3
-		);
-
-	*/
 	// Insert one by one
 	foreach ($users as $key => $user) {
 	    $res = pg_insert(_CON, _TB_, $user);

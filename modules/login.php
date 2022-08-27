@@ -35,6 +35,18 @@ $_CONFIG['script']['login'] = true;
             </div>
           </div>
         </div>
+
+<div class="form-check-inline">
+  <label class="form-check-label" for="th">
+    <input type="radio" name="lang" id="th" class="form-check-input" value="TH" checked>ภาษาไทย
+  </label>
+</div>
+<div class="form-check-inline">
+  <label class="form-check-label" for="en">
+  <input type="radio" name="lang" id="en" class="form-check-input" value="EN">English
+  </label>
+</div>
+<p>
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
@@ -44,6 +56,7 @@ $_CONFIG['script']['login'] = true;
               </label>
             </div>
           </div>
+          </p>
           <!-- /.col -->
           <div class="col-4">
             <input type="button" class="btn btn-primary btn-block" id="btlogin" value="ล็อกอิน">

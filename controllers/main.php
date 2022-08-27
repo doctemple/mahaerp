@@ -1,7 +1,7 @@
 <?php
 if(isset($_SESSION['uid'])){
-    $user_detail = get_user($_SESSION['uid']);
-    $user_online = $user_detail['fld_username'];
+    DEFINE('_USER',get_user($_SESSION['uid']));
+    $user_online = _USER['fld_username'];
 }
 
 function route($module){

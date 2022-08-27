@@ -13,9 +13,7 @@
 
     <div class="card">
         <div class="card-header no-print">
-        <button class="btn btn-success" data-toggle="modal" data-target="#modal-xl" style="margin-right:4px;" ><i class="fas fa-file-invoice-dollar"></i> ยืนยัน เปิดบิลขาย</button>
-        <div class="btn btn-primary" ><i class="fa fa-plus"></i>
-                    เพิ่มสินค้า</div>
+        <button class="btn btn-success" data-toggle="modal" data-target="#modal-xl" style="margin-right:4px;" ><i class="fas fa-file-invoice-dollar"></i> เปิดบิลขาย</button>
         </div>
         <div class="card-body">
         <div class="a4">
@@ -134,52 +132,48 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header bg-primary">
-                <h4 class="modal-title">เพิ่มสินค้า</h4>
+                <h4 class="modal-title">ยืนยัน ออเดอร์</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="modal-body">
 
-                <div class="form-group">
-                    <label>สินค้า</label>
+            <form>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm form-group">
+                        <label for="company">เลขใบสั่งซื้อ (P/O No)</label>
+                        <input type="text" class="form-control" id="company" placeholder="Company">
+                    </div>
+                </div>
                     <div class="row">
-                        <div class="col-1"><button type="button" class="btn btn-secondary">เพิ่ม</button></div>
-                        <div class="col">
-                            <select class="form-control">
-                                <option>product 1</option>
-                                <option>product 2</option>
-                                <option>product 3</option>
-                                <option>product 4</option>
-                                <option>product 5</option>
-                            </select>
+                    <div class="col-sm form-group">
+                        <label for="exampleInputFile">แนบไฟล์</label>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="exampleInputFile">
+                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                                <span class="input-group-text">อัพโหลด</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label>ยีห้อ</label>
-                    <select class="form-control">
-                        <option>Brand 1</option>
-                        <option>Brand 2</option>
-                        <option>Brand 3</option>
-                        <option>Brand 4</option>
-                        <option>Brand 5</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="model">รุ่น</label>
-                    <input type="text" class="form-control" id="model" placeholder="Model">
-                </div>
-                <div class="form-group">
-                    <label for="spec">สเปค</label>
-                    <textarea rows="5" class="form-control" id="spec" placeholder="Spec"></textarea>
+                    <label for="address">รายละเอียดสินค้า</label>
+                    <textarea class="form-control" id="detail" placeholder="Products" rows="5"></textarea>
                 </div>
 
             </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-primary">เพิ่ม</button>
+
+        </form>
+
+            </div>
+            <div class="modal-footer float-right">
+                <a href="?quo&confirm=yes" class="btn btn-primary">ยืนยัน ออเดอร์</a>
             </div>
         </div>
     </div>

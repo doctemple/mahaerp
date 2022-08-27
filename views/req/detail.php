@@ -198,7 +198,7 @@
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-            <a class="btn btn-success" href="?rql"><i class="fa fa-send"></i> ยืนยันขอราคา</a>
+            <a class="btn btn-success" href="?rql&confirm=yes"><i class="fa fa-send"></i> ยืนยันขอราคา</a>
         </div>
     </div>
 

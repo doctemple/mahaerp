@@ -12,6 +12,18 @@ foreach($_CONFIG['tags'] as $key => $val){
         echo $val."\n";
     }
 }
+?>
 
+<script>
+$(function() {
+    if(_Get('confirm')==='yes'){
+
+      toastr.success('ดำเนินการ ยืนยันสำเร็จ')
+
+    }
+});
+</script>
+
+<?php
 ECHO HTML5_CLOSE();
 ?>

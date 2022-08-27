@@ -9,10 +9,13 @@ function HTML5_OPEN(){
     <title>'._SYS['system'].'</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="dist/css/ionicons.min.css">
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <link rel="stylesheet" href="dist/css/animate.min.css">
     <link rel="stylesheet" href="dist/css/custom.css">
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="dist/js/wat.js"></script>
     </head>
     <body class="hold-transition sidebar-mini" >';
 }

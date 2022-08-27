@@ -12,12 +12,13 @@ if(isset($_POST['username'],$_POST['password'])){
             $password=md5($_POST['password']);
 
             $sql = "Select * from user_tbl where fld_username='$username' and fld_password='$password'";
-            $res=pg_query($conn,$sql);
+            $res=pg_query(_CON,$sql);
 
             if(pg_num_rows($res)>0){
                 $message_ok=true;
                 $user_list=pg_fetch_array($res);
                 $_SESSION['aut']=true;
+                $_SESSION['la']=$_POST['lang'];
                 $_SESSION['uid']=$user_list[0];
                 $_SESSION['u']=$user_list[1];
                 $message_error='logged now';

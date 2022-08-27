@@ -2,7 +2,7 @@
 session_start(); 
 include_once(_PATH.'/core/config.php');
 include_once(_PATH.'/controllers/conn.php');
-
+include_once(_PATH.'/languages/lang.php');
 include_once(_PATH.'/controllers/script.php');
 include(_PATH.'/components/com.php');
 include_once(_PATH.'/models/main.php');
@@ -14,10 +14,10 @@ ECHO HTML5_OPEN();
 <?php
 if($_PGSQL){
       if(!_CON){ 
-        echo overlay("การเชื่อมต่อ ฐานข้อมูล PostgreSQL",
-        '<i class="fas fa-check-circle text-success"></i> PHP รองรับ PostgreSQL แล้ว<br>
-        <i class="fas fa-times-circle text-danger"></i> ตรวจเช็ค HOST : '._SYS['host'].' <br>
-        <i class="fas fa-times-circle text-danger"></i> หนดค่าการเชื่อมต่อ core/config.php ให้ถูกต้อง',"file-code");
+        echo overlay(_L('psql_connect'),
+        '<i class="fas fa-check-circle text-success"></i> '._L('psql_connected').'<br>
+        <i class="fas fa-times-circle text-danger"></i> '._L('host_check').' : '._SYS['host'].' <br>
+        <i class="fas fa-times-circle text-danger"></i> '._L('psql_FIX'),"file-code");
       }
 
     if(isset($_SESSION['aut'])){ 
@@ -26,6 +26,6 @@ if($_PGSQL){
     include(_PATH.'/components/page-open.php'); 
   }
 }else{
-  echo overlay("PHP ไม่รองรับ PostgreSQL","กรุณาเปิด Extension php_pgsql ใน php.ini","database");
+  echo overlay(_L('php_pgsql'),_L('php_ext_pgsql'),"database");
 }
 ?>

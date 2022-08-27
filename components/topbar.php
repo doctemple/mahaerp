@@ -6,10 +6,10 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="?" class="nav-link"><i class="nav-icon fas fa-home text-primary"></i> แดชบอร์ด</a>
+        <a href="?" class="nav-link"><i class="nav-icon fas fa-home text-primary"></i> <?php echo _L('dashboard'); ?></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="?help" class="nav-link"><i class="fas fa-question-circle"></i> ช่วยเหลือ</a>
+        <a href="?help" class="nav-link"><i class="fas fa-question-circle"></i> <?php echo _L('help'); ?></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="?help" class="nav-link"><i class="fas fa-asterisk"></i> <?php echo _ROUTE; ?></a>

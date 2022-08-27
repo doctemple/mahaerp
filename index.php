@@ -10,23 +10,25 @@ DEFINE('_PARAM',$_PARAM);
 DEFINE('_ROUTE',$_ROUTE);
 DEFINE('_PATH',dirname(__FILE__));
 DEFINE('_LAST',date('d.m.Y H:i:s',FILEMTIME(_PATH."/.git")));
-$pn="fld_page";
-$sc="fld_subcode";
+$_GLOBAL['pn']="fld_pname";
+$_GLOBAL['pp']="fld_page";
+$_GLOBAL['pc']="fld_pcode";
+$_GLOBAL['sc']="fld_subcode";
 include(_PATH."/core/start.php");       
 
 if(isset($_ROUTE) && $_ROUTE!=""){
-    $modules = @get_page($conn,$_ROUTE);
+    $modules = @get_page($_ROUTE);
     if($modules){
-    $module = trim($modules[$pn]);   
+    $module = trim($modules[$_GLOBAL['pp']]);   
     }else{
         $module = "";
     }
     if($module!=""){
-        $subname = @get_subName($conn,$modules[$sc]);
+        $subname = @get_subName($modules[$_GLOBAL['sc']]);
         if($subname){
-            echo breadcrumb($modules[$pn],$subname,$modules[$pn]);
+            echo breadcrumb($modules[$_GLOBAL['pn']],$subname,$modules[$_GLOBAL['pn']]);
         }else{
-            echo breadcrumb($modules[$pn],$modules[$pn]);
+            echo breadcrumb($modules[$_GLOBAL['pn']],$modules[$_GLOBAL['pn']]);
         }
 
         ROUTE($module);

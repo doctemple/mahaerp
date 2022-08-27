@@ -11,7 +11,7 @@
           for($g=0;$g<$sizegroup;$g++){
 
             if($_ROUTE!=""){
-              $subcode =  @get_subCode($conn,$_ROUTE);
+              $subcode =  @get_subCode($_ROUTE);
             }else{
               $subcode ="";
             }
@@ -56,7 +56,7 @@
             <a href="controllers/signout.php" class="nav-link">
             <span class="btn btn-light btn-circle btn-circle-sm shadow">
               <i class="nav-icon fa fa-sign-out-alt fa-flip-horizontal text-danger"></i> 
-            </span><strong>&nbsp;&nbsp;ออกจากระบบ</strong>
+            </span><strong>&nbsp;&nbsp;<?php echo _L('signout'); ?></strong>
             </a>
           </li>
           <?php } ?>

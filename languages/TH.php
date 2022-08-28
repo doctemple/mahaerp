@@ -7,7 +7,7 @@ $_LANG['php_psql']['TH']="PHP ไม่รองรับ PostgreSQL";
 $_LANG['php_ext_psql']['TH']="กรุณาเปิด Extension php_pgsql ใน php.ini";
 
 $_LANG['dashboard']['TH']="แดชบอร์ด";
-$_LANG['dashboard_title']['TH']="ภาพรวม ไตรมาสต์ 3";
+$_LANG['dashboard_title']['TH']="แดชบอร์ด";
 
 $_LANG['search']['TH']="ค้นหา";
 $_LANG['help']['TH']="ช่วยเหลือ";

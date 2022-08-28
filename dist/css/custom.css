@@ -4,6 +4,11 @@
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
+.list-group-item:hover {
+  background: rgb(226, 255, 206) !important;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 .bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0; width:100%; }
 .bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
